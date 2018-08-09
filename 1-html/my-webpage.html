@@ -1,11 +1,10 @@
 <html>
-
 	<head>
 		<title>HTML: Basics</title>
 	</head>
 
 	<body>
-        <h2><u>Headers</u></h2>
+        <h2 id="top"><u>Headers</u></h2>
 		<h1>&lt;h1&gt;Use tags to create a h1 header.&lt;/h1&gt;</h1>
 		<h2>&lt;h2&gt;Use tags to create a h2 header.&lt;/h2&gt;</h2>
 		<h3>&lt;h3&gt;Use tags to create a h3 header.&lt;/h3&gt;</h3>
@@ -107,14 +106,15 @@
             <p>Username: <input type="text" /><br />
             Password: <input type="text"/></p>
 
-            <p><i>Radio</i> input options are analagous with a pick one out of <i>x</i> options. However, this use is only in place when given a specfic name that all the options belong to.</p>
+            <p><i>Radio</i> input options are analagous with a pick one out of <i>x</i> options. However, this use is only in place when given a specfic name that all the options belong to. The value tag helps you determine which option is selected.</p>
             <h4>Sample code:</h4>
             <p>
-            option_1: &lt;input type="radio" name="age"/&gt;<br />
-            option_2: &lt;input type="radio" name="age"/&gt;</p>
+            option_1: &lt;input type="radio" name="age" value="o18"/&gt;<br />
+            option_2: &lt;input type="radio" name="age" value="u18"/&gt;</p>
             <p>Above 18: <input type="radio" name="age" value="o18"/><br />
             Below 18: <input type="radio" name="age" value="u18"/></p>
 
+            
             <p><i>Drop down selection</i> is different. Instead of input tags, we use <i>select</i> tags that contain multiple <i>options</i>.
             Option tags are contained within the selection tags as shown below in the example.</p>
             
@@ -146,21 +146,130 @@
             <p>&lt;input type = "text" value = "default_username"/&gt;</p>
             <p>Username: <input type="text" value="default_text" /></p>
 
-            <p>&lt;input type = "radio" value = ""</p>
+            <p>&lt;input type = "radio" value = ""/&gt;</p>
 
             <p>&lt;input type = "submit"/&gt; displays a default button.</p>
             <input type="submit"/>
 
             <p>&lt;input type = "submit" value = "Click here!"/&gt; displays a customized-text button.</p>
             <input type="submit" value="Click here!"/>
-
-            
-
-
-
-
         </form>
 
-    </body>
+        <p></p>
+        <hr />
+        <h2>Tables</h2>
+        <p>Create tables in HTML as you would in MS Excel (they won't be as aesthetically pleasing until we add in CSS).</p>
+        <p>Make tables in HTML using the following tags:</p>
+        <p>
+            &lt;table&gt;&lt;/table&gt; tags are required to initiate a table.
+            <br>&lt;thead&gt;&lt;/thead&gt; tags generate a table header.
+            <br>&lt;tr&gt;&lt;/tr&gt; tags create rows within the table.
+            <br>&lt;td&gt;&lt;/td&gt; tags fill in the "cells" within a row with table data.
+        </p>
 
+        <h4>Example Table</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Sport</th>
+                    <th>Nation</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Yuzuru Hanyu</td>
+                <td>Figure Skating</td>
+                <td>Japan</td>
+            </tr>
+            <tr>
+                <td>Alina Zagitova</td>
+                <td>Figure Skating</td>
+                <td>Olympians from Russia</td>
+            </tr>
+            <tr>
+                <td>Evgenia Medvedeva</td>
+                <td>Figure Skating</td>
+                <td>Olympians from Russia</td>
+            </tr>
+            <tr>
+                <td>Javier Fernandez</td>
+                <td>Figure Skating</td>
+                <td>Spain</td>
+            </tr>
+        </table>
+
+        <h4>Sample code:</h4>
+        &lt;table&gt;
+            <br>&emsp; &lt;thead&gt;
+                <br>&emsp; &emsp; &lt;tr&gt;
+                    <br>&emsp; &emsp; &emsp; &lt;th&gt; Name &lt;th/&gt;
+                    <br>&emsp; &emsp; &emsp; &lt;th&gt; Sport &lt;th/&gt;
+                    <br>&emsp; &emsp; &emsp; &lt;th&gt; Nation &lt;th/&gt;
+                <br>&emsp; &emsp; &lt;/tr&gt;
+            <br>&emsp; &lt;/thead&gt;
+            <br>&emsp; &lt;tr&gt;
+                <br>&emsp; &emsp; &lt;td&gt; Yuzuru Hanyu &lt;td/&gt;
+                <br>&emsp; &emsp; &lt;td&gt; Figure Skating &lt;td/&gt;
+                <br>&emsp; &emsp; &lt;td&gt; Japan &lt;td/&gt;
+            <br>&emsp; &lt;/tr&gt;
+            <br />
+            <br>&emsp; &lt;tr&gt;
+                <br>&emsp; &emsp; &lt;td&gt; Alina Zagitova &lt;td/&gt;
+                <br>&emsp; &emsp; &lt;td&gt; Figure Skating &lt;td/&gt;
+                <br>&emsp; &emsp; &lt;td&gt; Olympians from Russia &lt;td/&gt;
+            <br>&emsp; &lt;/tr&gt;
+            <br>&emsp; &lt;tr&gt;
+                <br>&emsp; &emsp; &lt;td&gt; Evgenia Medvedeva &lt;td/&gt;
+                <br>&emsp; &emsp; &lt;td&gt; Figure Skating &lt;td/&gt;
+                <br>&emsp; &emsp; &lt;td&gt; Olympians from Russia &lt;td/&gt;
+            <br>&emsp; &lt;/tr&gt;
+        <br>&lt;/table&gt;
+        <p></p>
+
+        <hr />
+        <h2 id="links">Links</h2>
+
+        <h4>Absolute Links</h4>
+        <p>
+            <i>Absolute links</i> are used to redirect users to other webpages online.
+            Both text and images can be hyperlinked.
+        </p>
+        
+        <br>To hyperlink text:
+        <br>&lt;a href="INSERT_LINK_HERE"&gt; INSERT_HYPERTEXT_HERE&lt;/a&gt;
+        <p></p>
+        e.g. <a href="https://www.rockpapershotgun.com/2018/03/28/warframe-guide-tips-for-beginners/">Beginner's Guide to Warframe</a>
+
+        <p></p>
+        <br>To hyperlink an image:
+        <br>&lt;a href="INSERT_LINK_HERE"&gt;&lt;img src="INSERT_IMAGE_FILE_HERE.png"&gt;&lt;/a&gt;
+        
+        <br><br>e.g.
+        <p></p>
+        <a href="https://store.steampowered.com/app/367520/Hollow_Knight/"><img src="hollowknight.jpg" width = "600" height = "300"></a>
+        
+        <h4>Relative Links</h4>
+        <p>
+            <i>Relative links</i> are used to redirect users to other local pages within the same website.
+        </p>
+
+        <br>To generate a relative link:
+        &lt;a href="INSERT_HTML_FILE"&gt;Hello World!&lt;/a&gt;
+        <p></p>
+        e.g. <a href="helloworld.html">Hello World!</a>
+
+        <h4>Anchor Links</h4>
+        <p>
+            <i>Anchor links</i> are used to navigate through a single page (e.g. back to top buttons)
+        </p>
+
+        To generate an anchor link:
+        &lt;
+        <p></p>
+
+        <p>e.g. <a href="#top">Back to Top</a></p>
+
+        <p><a href="#links">Go to Links</a></p>
+
+    </body>
 </html>
