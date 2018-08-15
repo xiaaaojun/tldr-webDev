@@ -5,9 +5,7 @@
     <meta charset="utf-8" />
     <style type="text/css">
 
-        p {
-            color: aquamarine;
-        }
+        
 
         h1 {
             color: lightpink
@@ -26,17 +24,46 @@
         }
 
         #green {
-            color: green
+            color: green;
         }
 
+        #first {
+            color: orchid;
+            background-color: gainsboro;
+            width: 75%;
+            position: relative;
+            margin: 20px 5px;
+            padding: 5px 10px 5px 10px;
+        }
 
+        #second {
+            background-color: yellow;
+            width: 200px;
+            margin: 20px;        
+        }
 
+        .no-float {
+            clear:both;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        p {
+            margin: 0px;
+            padding: 0px;
+        }
 
     </style>
     <title>How to CSS</title>
 </head>
 <body>
-    <h1 style="color:pi; font-size:100%">Help</h1>
+    <div id="second">
+        <h1 style="color:pink; font-size:100%">Help</h1>
+    </div>
+
     <p style="color:blue; font-size:200%">ROG STRIX Z370-E Gaming Motherboard</p>
     <h1>this should be pink</h1>
 
@@ -46,9 +73,24 @@
     <p class="red large underlined">
         This should be dark red
     </p>
+    
+    <div id="first">    
+        Lorem ipsum dolor sit amet, tibique efficiendi vim et. Errem homero id pro. Rebum soleat reprehendunt in mel, eam in animal aperiri. At est aperiam saperet inermis, vero clita iudicabit eam ex. Exerci legere facete quo te. Ad duo inani summo doctus. Ius at munere utamur dignissim, commodo abhorreant ne sea, duo cu probo zril.Suas case gubergren has id. Vidit corpora convenire ad sit. Quo quot nibh vocibus ut, eu doming vocent efficiantur vis. Ne nec volumus aliquando, quo an salutatus pertinacia disputando.
+        Purto eligendi at quo, ut recusabo periculis contentiones per. Eam probo verterem te. Id minimum scaevola sadipscing vis. Nec no case senserit, cum ne esse deleniti honestatis, eum clita affert soluta cu. Melius deleniti cotidieque cu usu, partem persius democritum nam an. Munere mollis comprehensam nam cu. Volutpat partiendo eam te, usu ad nostro timeam delicata.
+        Tota quodsi at per, assum ancillae sententiae eam ne, ad sit latine quaerendum. Duo etiam mandamus id, has cu verterem elaboraret. Invenire abhorreant contentiones per no, ea essent eligendi mea. Epicuri intellegebat eum at, est utroque detraxit eu, eam nihil quidam erroribus ea. Has cu aliquam evertitur quaerendum.Tamquam philosophia at per, in ullum aeque discere per. An vim evertitur tincidunt. Per esse elitr et, quot debitis vituperata eum eu. In vis mazim scriptorem, aliquam tibique delicata usu id. Ea his scaevola omittantur. At eum nobis nonumes menandri, ut corpora deleniti antiopam mei.
+        Vivendum constituam ea quo, dicat dicta semper sit ei, vim invidunt deserunt expetendis eu. Duo et labitur patrioque consequuntur, ne eirmod ancillae voluptua mel. Sea ullum possit definitionem ei, posse apeirian ut duo. Ea eum erat putant, no unum ornatus epicuri has, saperet noluisse his et. Aeque ludus eruditi vim ad, duo vide ludus ubique no.
+        Et quem magna vim. Aeque antiopam pericula est ei. Wisi essent conclusionemque nec at. Vis denique consulatu ad, ex option facilisis est. Ex vim inciderint disputationi, cu inani mandamus hendrerit eam. Te vis velit primis doctus, ut quod audiam dolorem vim, cum ut natum eirmod periculis. Odio abhorreant ea vis, ne ius tation dicunt perpetua, ad cum platonem persequeris delicatissimi. Nam etiam falli democritum et. Postulant euripidis ex pri. No vix diam impetus repudiandae, sale habemus sadipscing no cum, his an malis convenire. Ex vis appareat reprimique, nominavi antiopam scripserit vel ad.
+        Pri errem luptatum expetendis eu, eum invidunt gubergren id, sed consul elaboraret deterruisset cu. Mea magna dictas at. Per tale adhuc ipsum ne, sit eu aeque paulo, tractatos necessitatibus per ea. Postulant necessitatibus no quo. Ut posse errem eruditi qui.
+        No vix omnis detraxit, facete verear eloquentiam eam cu. Quo ad mundi labitur, eos fugit oratio semper id. Ad quo aperiri abhorreant, ne qui dissentias complectitur. Nam no quaeque cotidieque.
+    </div>
 
-    <p id="green">
-        This should be green
-    </p>
+    Not floating
+    <div id="second">
+        This should be green.
+    </div>
+
+    <div class="no-float"></div>
+
+    
 </body>
 </html>

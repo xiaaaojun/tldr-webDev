@@ -1,0 +1,53 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#topbar {
+    width: 1300px;
+    height: 40px;
+    margin: 0px 25%;
+}
+
+#logo {
+    margin: 8px 8px;
+    float: left;
+}
+#signin-img {
+    margin: 10px 8px;
+    float: left;
+}
+
+.topbar-section {
+    float: left;
+    height: 80%;
+    border-left: 1px #cccccc solid;
+}
+
+#header-text {
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    bottom: 13px;
+    left: -6px;
+    padding-right: 40px;
+}
+#header-menu {
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 40px;
+    border-right: 1px #cccccc solid;
+    height: 80%;
+    position: relative;
+}
+.header-text {
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    float: left;
+}
